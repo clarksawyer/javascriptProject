@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    border-bottom: 2px solid black;
+}
+.main label {
+    font-size: 200px;
+    color: red;
+}
+.main button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background: transparent;
+    transition: 0.4s;
+}
+.main button:hover {
+    background: black;
+    color: white;
+}
+.reset {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.reset button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background: transparent;
+    transition: 0.4s;
+}
+.reset button:hover {
+    background: black;
+    color: white;
+}
+.col p {
+    text-align: center;
+    font-size: 18px;
+}
+.another {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+}
+.another-col p {
+    text-align: center;
+    font-size: 18px;
+}
+.another-col .number {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.another-col .number label {
+    font-size: 200px;
+    color: red;
+}
+.roll-button {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.roll-button button {
+    padding: 15px 50px;
+    font-size: 18px;
+    background: transparent;
+    transition: 0.4s;
+}
+.roll-button button:hover {
+    background: black;
+    color: white;
+}
+.another-main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.recs {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.recs button {
+    padding: 15px 50px;
+    font-size: 18px;
+    background: transparent;
+    transition: 0.4s;
+}
+.recs button:hover {
+    background: #000;
+    color: white;
+}
+.calculator {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+.calculator-col {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.clarkculator {
+    border: 2px solid black;
+    padding: 40px;
+    background: gray;
+    border-radius: 22px;
+    box-shadow: 0 0 2px 2px #333;
+}
+.clarkculator input {
+    width: 64px;
+    height: 64px;
+    font-size: 18px;
+    margin-top: 5px;
+    border-radius: 12px;
+    background: black;
+    color: white;
+}
+.clarkculator .display{
+    width: 270px;
+    text-align: right;
+    font-size: 18px;
+    padding: 0 20px;
+    border: 2px solid black;
+}
+.clark .equals {
+    width: 133px;
+}
+.cal-main p {
+    text-align: center;
+    font-size: 18px;
+}
+.cal-main {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+body.dark {
+    background-image: url(images/hello.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+}
+body.white {
+    background: #fff;
+    opacity: 1;
+}
+.age {
+    padding-bottom: 25px;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+}
+.age-main p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.age-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.button {
+    margin-top: 20px;
+}
+.button button {
+    padding: 15px 40px;
+    font-size: 18px;
+    background: transparent;
+    transition: 0.6s;
+}
+.button button:hover {
+    background: black;
+    color: white;
+}
+.age-ako input {
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    padding: 0 20px;
+    font-size: 18px;
+}
+.answer {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    border: 2px solid black;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.answer p {
+    margin-top: 100px;
+    font-size: 18px;
+    text-align: center;
+}
+@media (max-width: 700px) {
+    .col p {
+        font-size: 14px;
+        margin-left: -20px;
+        margin-top: -100px;
+    }
+    .main button {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .main label {
+        font-size: 150px;
+    }
+    .col {
+        margin-left: 40px;
+    }
+    .reset button {
+        font-size: 12px;
+        padding: 10px 25px;
+        margin-left: -40px;
+    }
+    .another-col p {
+        font-size: 12px;
+        margin-top: -20px;
+    }
+    .number #first, #second, #third {
+        font-size: 93px;
+    }
+    .roll-button button {
+        font-size: 13px;
+        padding: 10px 35px;
+    }
+    .recs button {
+        font-size: 13px;
+        padding: 10px 35px;
+    }
+    .clarkculator {
+        padding: 15px 15px;
+    }
+    .age-main p {
+        font-size: 15px;
+    }
+    .answer {
+        width: 320px;
+    }
+    .button button {
+        padding: 10px 35px;
+        font-size: 13px;
+    }
+}

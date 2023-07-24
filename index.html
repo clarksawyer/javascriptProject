@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarksoy Programming In Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+            <p>This Programm will decrease or increase a number!</p>
+            <div class="main">
+                <button type="button" id="dec">Decrease</button>
+                <label id="display">0</label>
+                <button type="button" id="inc">Increase</button>
+            </div>
+            <div class="reset">
+                <button id="res" type="button">Reset</button>
+            </div>
+        </div>
+    </div>
+    <div class="another">
+        <div class="another-main">
+            <div class="another-col">
+                <p>This Programm will generate a random 3 digit number!</p>
+                <div class="number">
+                    <label id="first">0</label>
+                    <label id="second">0</label>
+                    <label id="third">0</label>
+                </div>
+                <div class="roll-button">
+                    <button id="roll" type="button">Roll</button>
+                </div>
+                <div class="recs">
+                    <button id="rec" type="button">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="calculator-text">
+        <div class="cal-main">
+            <p>This programm is calclulator</p>
+            <p style="font-size: 10px;">(Warning: Do not type in the calcualtor because it is not function when you type a characther !)</p>
+        </div>
+    </div>
+    <div class="calculator">
+        <div class="calculator-col">
+            <div class="clarkculator">
+                <input type="text" class="display" id="displays">
+                <form>
+                    <div class="clark">
+                        <input type="button" id="acc" value="AC">
+                        <input type="button" value="DE" onclick="displays.value = displays.value.toString().slice(0,-1)">
+                        <input type="button" id="." value=".">
+                        <input type="button" id="/" value="/">
+                    </div>
+                    <div class="clark">
+                        <input type="button" id="7" value="7">
+                        <input type="button" id="8" value="8">
+                        <input type="button" id="9" value="9">
+                        <input type="button" id="*" value="*">
+                    </div>
+                    <div class="clark">
+                        <input type="button" id="4" value="4">
+                        <input type="button" id="5" value="5">
+                        <input type="button" id="6" value="6">
+                        <input type="button" id="-" value="-">
+                    </div>
+                    <div class="clark">
+                        <input type="button" id="1" value="1">
+                        <input type="button" id="2" value="2">
+                        <input type="button" id="3" value="3">
+                        <input type="button" id="+" value="+">
+                    </div>
+                    <div class="clark">
+                        <input type="button" id="00" value="00">
+                        <input type="button" id="0" value="0">
+                        <input type="button" id="=" value="=" class="equals">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="age">
+        <div class="age-col">
+            <div class="age-main">
+                <p>This program will determine your age whether it is <b>GOD</b>, <b>SENIOR</b>, <b>ADULT</b>, <b>CHILD</b>, and <b>NOT BEEN BORN YET</b> !</p>
+            </div>
+            <div class="age-content">
+                <div class="age-clark">
+                    <div class="age-ako">
+                        <label>Enter Your Age:</label>
+                        <input type="text" id="input">
+                    </div>
+                    <div class="button">
+                        <button type="button" id="age">Submit</button>
+                        <button id="reset">Reset</button>
+                    </div>
+                    <div class="answer">
+                        <p id="answers"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
